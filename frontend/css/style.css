@@ -1,0 +1,40 @@
+.form-persona{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(101, 136, 136);
+    border-radius: 10px;
+} 
+
+.form-persona form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-persona input{
+    height: 30px;
+    width: 400px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form-persona button{
+    margin: auto;
+    width: 100px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-persona label{
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
