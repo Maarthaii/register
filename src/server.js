@@ -15,8 +15,8 @@ const connection = mysql.createConnection({
 
 app.post("/", (req, res) => {
 
-  app.get("/", (req, res) => {
-    res.send("¡Hola, mundo!"); 
+   app.get("/", (req, res) => {
+    res.send(""); 
   });
   
 
@@ -34,6 +34,17 @@ app.post("/", (req, res) => {
     }
   );
 });
+
+// // Ruta para pedir usuarios 
+// // https://localhost:3000/usuarios
+// server.get('/personas', (req, res) => {
+  
+//   entity.query('SELECT * FROM personas, (err, result) => {
+//     console.log(result)
+//     res.json(result)
+//   })
+
+// })
 
 app.listen(3000, () => {
   console.log("Servidor escuchando en el puerto 3008");

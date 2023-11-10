@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="form-persona" id="form-persona"> 
-    <form  method="post">
+    <form action="http://localhost:3000/persona" method="post" required>
         <label>Registre la informacion solicitada</label>
         <input type="text" name="identificacion" placeholder="Identificacion" required>
         <input type="text" name="nombre" placeholder="Nombres" required>
@@ -17,7 +17,7 @@
         <input type="text" name="codigo" placeholder="Codigo Postal">
         <input type="text" name="telefono" placeholder="Telefono">
         <input type="email" name="correo" placeholder="Correo Electronico">
-        <button type="submit" onclick="update()">Registrar</button>
+        <button type="submit">Registrar</button>
     </form>
     </div>
 </body>
