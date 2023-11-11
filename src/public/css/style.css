@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+html{
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    
+background-image: url("../img/culebra2.jpg");
+background-repeat: no-repeat;
+}
+
 .form-persona{
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
-    background-color: rgb(101, 136, 136);
+    width: 550px;
+    height: 450px;
+    background-color: rgb(34, 34, 34);
     border-radius: 10px;
-} 
+    color: rgb(247, 243, 243);
+    transform: (50%,50%,50%);
+    opacity: 0.7;
+}  
 
 .form-persona form{
     display: flex;
@@ -16,12 +31,17 @@
 
 .form-persona input{
     height: 30px;
-    width: 400px;
+    width: 500px;
     margin: 5px;
     outline: none;
     border: none;
     border-radius: 5px;
     padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    opacity: 1;
+
 }
 
 .form-persona button{
@@ -31,10 +51,77 @@
     outline: none;
     border: none;
     border-radius: 5px;
+    background-color: blue;
+    color: rgb(13, 14, 14);
+    cursor: pointer;
 }
 
-.form-persona label{
+.form-persona button:hover{
+    background-color: aliceblue;
+}
+
+.form-persona label{    
     text-align: center;
     margin: 5px;
     font-size: 20px;
+}  
+
+.back-form{
+    background-color: antiquewhite;
+    flex: 1;
+    width: 100vw;
+    height: 380px;
+    padding: 20px;
+    justify-content: center;
+    text-align:left;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 0 60px 50px 0px;
+    color: aliceblue;
+    background-image: url("../img/culebra.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px;
 }
+
+
+.back-form div{
+    color: rgb(17, 16, 16);
+    transition: all 500ms; 
+    position: relative;
+} 
+
+.back-form-button{
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    margin: auto;
+    width: 100px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.back-form-button:hover{
+    background-color: aliceblue;
+}
+
+.back-form p{
+    font-size: 14px;
+}
+
+
+.all-container{
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 

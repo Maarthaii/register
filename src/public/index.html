@@ -7,18 +7,28 @@
     <title>Facturacion</title>
 </head>
 <body>
-    <div class="form-persona" id="form-persona"> 
-    <form action="http://localhost:3000/persona" method="post" required>
-        <label>Registre la informacion solicitada</label>
-        <input type="text" name="identificacion" placeholder="Identificacion" required>
-        <input type="text" name="nombre" placeholder="Nombres" required>
-        <input type="text" name="direccion" placeholder="Direccion">
-        <input type="text" name="ciudad" placeholder="Ciudad">
-        <input type="text" name="codigo" placeholder="Codigo Postal">
-        <input type="text" name="telefono" placeholder="Telefono">
-        <input type="email" name="correo" placeholder="Correo Electronico">
-        <button type="submit">Registrar</button>
-    </form>
+    <div class="all-container"> 
+
+        <div class="form-persona" id="form-persona"> 
+            <form action="http://localhost:3000/persona" method="post" required>
+                <label>Ingresa los siguientes datos</label>
+                <input type="text" name="identificacion" placeholder="Identificacion" required>
+                <input type="text" name="nombre" placeholder="Nombres" required>
+                <input type="text" name="direccion" placeholder="Direccion">
+                <input type="text" name="ciudad" placeholder="Ciudad">
+                <input type="text" name="codigo" placeholder="Codigo Postal">
+                <input type="text" name="telefono" placeholder="Telefono">
+                <input type="email" name="correo" placeholder="Correo Electronico">
+                <button type="submit">Enviar</button>
+            </form> 
+        </div>
+
+    <div class="back-form">
+        <h3>Registrate Ahora</h3>
+        <p>Si ya tienes una cuenta, inicia sesion ahora</p>
+        <button class="back-form-button">Iniciar sesion</button>
     </div>
+
+</div>
 </body>
 </html>
